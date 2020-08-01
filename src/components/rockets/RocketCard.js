@@ -2,11 +2,11 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 
-function RocketCard({ rocket_name, flickr_images, active, id }) {
+function RocketCard({ rocket_name, flickr_images, active, rocket_id }) {
   return (
 
     <div className="column is-one-quarter-desktop is-one0third-tablet is-half-mobile">
-      <Link to={`/rockets/${id}`}>
+      <Link to={`/rockets/${rocket_id}`}>
         <div className="card">
           <div className="card-header">
             <h4 className="card-header-title">{rocket_name}</h4>
