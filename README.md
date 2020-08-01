@@ -4,9 +4,9 @@
 
 Make sure that you have Yarn installed
 
-`yarn` to install dependencies
-`yarn start` to run the development server at localhost:3000
-`yarn build` to create a build directory
+`yarn` to install dependencies  
+`yarn start` to run the development server at [localhost:3000](http://localhost:3000/)  
+`yarn build` to create a build directory  
 
 ## Overview
 
