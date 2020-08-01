@@ -1,8 +1,21 @@
 import React from 'react'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
-const App = () => {
+import Home from './components/Home'
+import LandingPage from './components/LandingPage'
+import RocketsIndex from './components/RocketsIndex'
+import DragonsIndex from './components/DragonsIndex'
+
+function App() {
   return (
-    <h1>Hello World</h1>
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/landing" component={LandingPage} />
+        <Route path="/rockets" component={RocketsIndex} />
+        <Route path="/dragons" component={DragonsIndex} />
+      </Switch>
+    </BrowserRouter>
   )
 }
 
